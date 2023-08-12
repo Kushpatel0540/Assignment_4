@@ -51,7 +51,7 @@ app.post("/", function (req, res) {
   var product2 = parseInt(req.body.product2);
 
   // Calculation
-  var price1 = 8.99;
+  var price1 = 6.99;
   var price2 = 9.99;
   var total1 = price1 * product1;
   var total2 = price2 * product2;
