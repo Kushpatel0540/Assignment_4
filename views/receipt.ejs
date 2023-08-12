@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Receipt</title>
+
+    <style>
+       body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      table {
+        width: 25%;
+        text-align: center;
+        margin: 0 auto;
+        border:  1px solid black;
+      }
+
+      tr,
+      th,
+      td {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Receipt</h1>
+    <p><strong>Name:</strong> <%= name %></p>
+    <p><strong>Address:</strong> <%= address %></p>
+    <p><strong>City:</strong> <%= city %></p>
+    <p><strong>Phone:</strong> <%= phone %></p>
+    <p><strong>Email:</strong> <%= email %></p>
+    <p><strong>Province:</strong> <%= province %></p>
+    <p><strong>Postal:</strong> <%= postal %></p>
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td><%= product1 %></td>
+        <td><%= price1 %></td>
+        <td><%= total1 %></td>
+      </tr>
+      <tr>
+        <td><%= product2 %></td>
+        <td><%= price2 %></td>
+        <td><%= total2 %></td>
+      </tr>
+      <br>
+      <tr>
+        <td colspan="3"><strong>Total:</strong></td>
+        <td><%= total %></td>
+      </tr>
+    </table>
+  </body>
+</html>

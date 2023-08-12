@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Orders</title>
+  </head>
+  <body>
+    <h1>Orders</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Province</th>
+        <th>Postal</th>
+        <th>Product 1</th>
+        <th>Product 2</th>
+        <th>Total</th>
+      </tr>
+      <% orders.forEach(function(order) { %>
+      <tr>
+        <td><%= order.name %></td>
+        <td><%= order.address %></td>
+        <td><%= order.city %></td>
+        <td><%= order.phone %></td>
+        <td><%= order.email %></td>
+        <td><%= order.province %></td>
+        <td><%= order.postal %></td>
+        <td><%= order.product1 %></td>
+        <td><%= order.product2 %></td>
+        <td><%= order.total %></td>
+      </tr>
+      <% }); %>
+    </table>
+  </body>
+</html>
